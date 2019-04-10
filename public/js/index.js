@@ -63,11 +63,9 @@ $(document).ready(function() {
                         };
                         $.ajax({
                             method: "post",
-<<<<<<< HEAD
-                            url:`${host}friendlist`,
-=======
+
                             url:`http://${host}friendlist`,
->>>>>>> 修改了登录无好友的问题
+
                             data: JSON.stringify(data),
                             success: ret => {
                                 $(ret.data).each(i => {
